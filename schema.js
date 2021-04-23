@@ -72,11 +72,12 @@ const QueryType = new GraphQLObjectType({
     },
     person: {
       type: PersonType,
-      // args: {
-      //   name: {type: GraphQLString}
-      // },
-      resolve: (root, args) => fetch(`https://swapi.dev/api/people/?search=Anakin%20Skywalker`)
+      args: {
+        name: {type: GraphQLString}
+      },
+      resolve: (root, args) => fetch(`https://swapi.dev/api/people/${args.name}`)
           .then(res => res.json())
+      
     }
   })
 })
