@@ -1,6 +1,6 @@
 # Star Wars
 
-> React, GraphQL, Apollo app that uses the Star Wars API to display launches
+> React, GraphQL, Apollo app that uses the Star Wars API to display all people
 
 ## Quick Start
 
